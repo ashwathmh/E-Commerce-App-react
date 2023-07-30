@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
 nav{
 	background-color:#ffffff;
 	display: flex;
@@ -41,6 +42,7 @@ nav .navigation ul li a{
 nav .navigation ul li a:hover {
 	color:#fad05d;
 }
+
 .searchbar {
   display: flex;
   align-items: center;
@@ -50,9 +52,11 @@ nav .navigation ul li a:hover {
   width: 30%;
   margin-left: 20%;
 }
+
 .logo-container{
   margin-left: 5%;
 }
+
 .searchinput {
   flex: 1;
   border: none;
@@ -73,11 +77,13 @@ color:#fac534;
 .searchbar:hover{
 border: 2px solid black;
 }
+
 .navBarCartIcon{
   font-size: 22px;
   color:#fac534;
   margin:0px 20px 0px 30px;
 }
+
 .navBarCartIcon:hover{
   color: black;
 }
@@ -85,9 +91,7 @@ border: 2px solid black;
 .logo{
   font-size: 50px;
 }
-
 /* nav bar ends */
-
 
 /* card start */
 .card-container{
@@ -99,6 +103,7 @@ border: 2px solid black;
   margin: 20px;
   padding: 20px;
 }
+
 .card-image{
   width:100%;
   height: 100px;
@@ -106,6 +111,7 @@ border: 2px solid black;
   object-fit:contain;
   border-radius: 8px 8px 0 0;
 }
+
 .card-container:hover{
   box-shadow: #eed182 0px 5px 15px;
 }
@@ -116,12 +122,15 @@ border: 2px solid black;
   font-size: 16px;
   color: #fac534
 }
+
 .card-rateing{
   font-size: small;
 }
+
 .card-rateing span{
   font-weight: 500;
 }
+
 .card-amount {
 font-weight: 700;
 margin-bottom: 5px;
@@ -131,7 +140,6 @@ margin-top: 15px;
 
 
 /* Product start */
-
 .product-card-container{
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -143,6 +151,7 @@ margin-top: 15px;
   margin: 20px;
   padding: 20px;
 }
+
 .product-card-content{
   border-radius: 8px;
   width: 50%;
@@ -151,21 +160,18 @@ margin-top: 15px;
   flex-direction: column;
   padding: 20px;
 }
+
 .product-card-image{
   width:50%;
   height: 100%;
   object-fit:fill;
   border-radius: 8px 8px 0 0;
 }
+
 .product-card-container:hover{
   box-shadow: #f3e4ba 0px 5px 15px;
 }
 
-/* .product-card-title{
-  margin:15px 0px 10px 0px;
-  font-weight: 500;
-  font-size: 16px;
-} */
 .product-card-title{
   margin:15px 0px 10px 0px;
   font-weight: 500;
@@ -174,43 +180,29 @@ margin-top: 15px;
   margin-top: 70px;
   margin-left: 20px;
 }
+
 .offerZone{
   margin-left: 20px;
 }
+
 .offerText{
   color: red
 }
+
 .product-card-rateing{
   font-size: small;
 }
+
 .product-card-rateing span{
   font-weight: 500;
 }
+
 .product-card-amount {
 font-weight: 500;
 margin-bottom: 5px;
 font-size: 20px;
 }
 
-/* 
-.main-img {
-  background-image: url("https://img.freepik.com/free-vector/template-banner-online-store-with-shopping-cart-with-purchases-boxes-delivery-from-supermarket-vector-illustration_548887-104.jpg");
-  background-size:cover;
-  background-position: center; 
-  width: 100%;
-  height: 200px;
-  /* transition: transform 0.3s ease, filter 0.3s ease; */
-
-
-/* .main-img:hover {
-  transform: scale(1.1); 
-  filter: blur(2px); 
-}  */
-/* 
-.main-imgContainer{
-  width: 100%;
-  height: 300px;
-} */
 .main-img {
   background-image: url("https://static.vecteezy.com/system/resources/previews/004/299/835/original/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-free-vector.jpg");
   background-size: cover;
@@ -224,7 +216,6 @@ font-size: 20px;
   padding: 0;
   width: 100%;
   height: 80vh;
-  
   }
   
   .mainContainer{
@@ -238,15 +229,15 @@ font-size: 20px;
     flex-direction: column;
     padding: 1rem;
     width: 40%;
-    background-color: #fff;
-    
+    background-color: #fff;  
   }
+
     .imageBox {
    display:flex;
    align-items: center;
    justify-content: center;
-  /* width: 100%; */
   }
+
   .mainPage .leftSection .image{
     height: 320px;
     width: 320px;  
@@ -254,7 +245,6 @@ font-size: 20px;
     margin-bottom: 30px;
     }
     
-  
   .button{
    display: flex;
    padding-top: 1rem;
@@ -273,6 +263,7 @@ font-size: 20px;
     width: 50%;
     cursor: pointer;
   }
+
   .addCartbutton {
     display:flex;
     align-items: center;
@@ -297,7 +288,8 @@ font-size: 20px;
     padding: 1rem;
     flex-grow: 1;
   }
-  /*  */
+
+  /*Main Image  */
   .main-img {
     background-image: url("https://static.vecteezy.com/system/resources/previews/004/299/835/original/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-free-vector.jpg");
     background-size: cover;
@@ -306,6 +298,7 @@ font-size: 20px;
     height:330px;
     margin-bottom: 40px;
     }
+
   .catagoryHeader{
     font-size: 30px;
     font-weight: bolder;
@@ -314,6 +307,7 @@ font-size: 20px;
     margin-bottom: 50px;
    
   }
+
   .catagory-Name {
   text-transform:capitalize;
   display: inline-block;
@@ -322,6 +316,7 @@ font-size: 20px;
   font-weight: 500;
   color:#fac534;
   }
+
   .catagory-Name:hover{
     color:#c7ba97;
   }
@@ -331,6 +326,7 @@ font-size: 20px;
     flex-direction: row;
     overflow: scroll;
   }
+
   .cat {
      scrollbar-width: none; 
     -ms-overflow-style: none; 
@@ -339,8 +335,8 @@ font-size: 20px;
   .cat::-webkit-scrollbar {
     display: none;
   }
+
   .cat::-webkit-scrollbar {
-  
     width: 8px; 
   }
   
@@ -357,7 +353,6 @@ font-size: 20px;
   }
 
   /* cart css */
-
 .cart-maincontainer{
    border: 1px solid #ccc;
    border-radius: 8px;
@@ -370,15 +365,19 @@ font-size: 20px;
      flex-direction: column;
     justify-content: space-between;
 }
+
 .cart-maincontainer:hover{
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
+
   .cart-container{
     display: flex;
   }
+
 .cart-right{
   width: 100%;
 }
+
   .cart-image{
    width:60%;
   height: 100px;
@@ -386,12 +385,14 @@ font-size: 20px;
   object-fit:contain;
   border-radius: 8px 8px 0 0;
   }
+
   .cart-head{
     color: #ffbf10;
     font-weight: 500;
     margin-bottom: 20px;
     width: 100%;
   }
+
 .cart-rate{
   margin-top:15px;
   margin-bottom: 20px;
@@ -403,15 +404,18 @@ font-size: 20px;
   margin-top: 30px;
   align-items: center;
 }
+
 .cart-svg{
   display: flex;
   align-items: center;
 }
+
 .cart-svg svg{
 font-size: 25px;
 margin-right: 5px;
 margin-left: 5px;
 }
+
 .cart-buton svg{
   font-size: 25px;
 } 
@@ -431,10 +435,12 @@ font-weight: 700;
      margin: 20px;
      padding: 20px;
 }
+
 .cart-payHead{
   font-size: 20px;
   font-weight: bolder;
 }
+
 .cart-flex{
  display:flex;
  justify-content: space-between;
@@ -442,6 +448,7 @@ font-weight: 700;
  margin-top: 15px;
  font-weight: 400
 }
+
 .cart-button{
   border: none;
   outline: none;
@@ -454,12 +461,15 @@ font-weight: 700;
   justify-content: center;
   margin-top: 30px;
 }
+
 .bottomline{
   margin-bottom: 10px;
 }
+
 .cart-button:hover{
   opacity: 0.5;
 }
+
 .cartBold{
   font-weight: 700;
 }
@@ -482,9 +492,11 @@ text-transform: capitalize;
 .red{
   color: red;
 }
+
 .green{
   color: green;
 }
+
 .list-Header-Filter{
   display: flex;
   justify-content: space-between;
@@ -497,6 +509,7 @@ text-transform: capitalize;
   font-weight: 500;
   color: rgb(240, 129, 2);
 }
+
 #sort{
   width: 150px;
   padding: 5px;
@@ -513,12 +526,14 @@ text-transform: capitalize;
 .paragraph{
   margin-bottom: 10px;
 }
+
 .card-amount-details{
   font-size: 25px;
   margin-top: 15px;
   margin-bottom: 15px;
   font-weight: 700;
 }
+
 .listOrder-details li{
 margin-bottom: 15px;
 }

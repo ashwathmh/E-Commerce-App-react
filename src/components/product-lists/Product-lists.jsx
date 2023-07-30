@@ -48,6 +48,7 @@ const ProductLists = () => {
           </div>
         )
       })}
+
       <div className='cat'>
       {products.filter((f)=>f.includes(searchText)||searchText=="").map((p,ix)=>{
         return(
@@ -56,6 +57,7 @@ const ProductLists = () => {
           </div>
         )
       })}
+      
      </div>
      </div>
       </div>
