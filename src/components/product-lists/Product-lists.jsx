@@ -25,11 +25,6 @@ const ProductLists = () => {
       .catch(error => console.error('Error fetching products:', error));
   }, []);
 
-  const images=[{name:"electronics",url:"https://www.figgers.com/wp-content/themes/figg-wirless/assets/images/acp-free.gif"},
-  {name:"jewelery",url:"http://3.bp.blogspot.com/-KLgANztWG7o/TlVI--zkXbI/AAAAAAAABNw/wiKk_OhGRC8/s1600/necklace-zoom-DSC_9776.jpg"},
-  {name:"men's clothing",url:"https://cdni.llbean.net/is/image/wim/266085_1207_41?hei=1095&wid=950&resMode=sharp2&defaultImage=llbstage/A0211793_2"},
-  {name:"women's clothing",url:"https://ae01.alicdn.com/kf/HTB1.P8xSXXXXXX3XFXXq6xXFXXXq/chiffon-dress-stylish-floral-clothing-summer-sweep-long-dress-wear-jilbab-women-cloth-kaftan-free-ship.jpg"}]
-
   return (
         <>
       <Navbar showSearch={true} searchText={searchText} onSearchChange={(v)=>setSearchText(v)}/>
@@ -56,8 +51,8 @@ const ProductLists = () => {
       <div className='cat'>
       {products.filter((f)=>f.includes(searchText)||searchText=="").map((p,ix)=>{
         return(
-          <div data-ref={ix.toString()} onClick={()=>navigate(`/items-lists/${p}`)}  className='head'>
-             <ProductCard  title={p} rate={2} price={p} imgUrl={p} />
+          <div data-ref={ix.toString()} onClick={()=>navigate(`/product-lists/${p}`)}  className='head'>
+             <ProductCard  title={p} />
           </div>
         )
       })}

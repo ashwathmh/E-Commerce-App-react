@@ -11,7 +11,6 @@ import Navbar from '../navbar/Navbar';
 const ProductDetails = () => {
     const [product, setProduct] = useState({});
     const [cart, setCart] = useState([]);
-    const navigate = useNavigate();
     const {catagory, itemId } = useParams();
   
     useEffect(() => {

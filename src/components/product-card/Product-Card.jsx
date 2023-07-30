@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import '../../App.css'; 
 
 // product-card function is created
-const ProductCard = ({ title, rate, price,imgUrl }) => {
+const ProductCard = ({ title}) => {
 
   // images are added
   const images=[
