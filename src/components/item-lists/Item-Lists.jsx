@@ -24,12 +24,14 @@ const ItemLists = () => {
   }, []);
 
   return (
+    
     <div style={{height:"95vh",width:"99vw", display:"flex",flexDirection:"column"}}>
       <Navbar showSearch={true} searchText={searchText} onSearchChange={(v)=>setSearchText(v)}/>
      
      <div style={{display:"flex",flexDirection:"column",height:"90vh",width:"99vw",overflow:"auto"}} className='cat'>
      <div className='list-Header-Filter'>
      <h id="listHeader">{catagory}</h>
+
      <div className='dropdown'>
       <label>Sort :</label>
      <select id="sort" name="sort" value={sortType} onChange={(v)=>setSortType(v.currentTarget.value)} >
@@ -38,7 +40,9 @@ const ItemLists = () => {
             <option value="Low">Low to High </option>
        </select>
        </div>
+
      </div>
+
      <div style={{width:"99vw", display:"flex",flexWrap:"wrap", gap:"10px",margin:"8px",justifyContent:'center'}}>
       {products.sort((a,b)=>sortType=="Low"?a.price-b.price:sortType=="High"?b.price-a.price:a.id-b.id).filter((f)=>f.title.includes(searchText)||searchText=="").map((p)=>{
         return(

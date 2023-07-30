@@ -13,6 +13,7 @@ const ProductDetails = () => {
     const [cart, setCart] = useState([]);
     const {catagory, itemId } = useParams();
   
+    // Get method is used in UseEffect 
     useEffect(() => {
       axios.get(`https://fakestoreapi.com/products/${itemId}`)
         .then(response => setProduct(response.data))

@@ -19,6 +19,7 @@ const ProductLists = () => {
   const [searchText, setSearchText] = useState("");
   const navigate = useNavigate();
 
+  // get method is used in useEffect
   useEffect(() => {
     axios.get('https://fakestoreapi.com/products/categories')
       .then(response => setProducts(response.data))
@@ -33,6 +34,8 @@ const ProductLists = () => {
       <catagoryHeader/>
       <div className='container'>
      
+
+     {/* Product Mapping */}
       {products.map((p,ix)=>{
         return(
           <div onClick={() => {

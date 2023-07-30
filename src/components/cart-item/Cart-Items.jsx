@@ -61,6 +61,8 @@ let totalCount=0;
      <div style={{display:"flex",flexDirection:"column",height:"80vh",width:"100vw",overflow:"auto"}}>
      <h className="shopping-header">Shopping Cart</h>
 <div style={{display:"flex",flexWrap:"wrap",gap:"10px", justifyContent:"center"}}>
+
+  
   {cart.map((c)=>{
     const item=products.find((i)=>i.id==c.id);
     if(item){
