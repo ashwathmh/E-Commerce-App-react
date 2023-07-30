@@ -1,38 +1,528 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+nav{
+	background-color:#ffffff;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	align-items: center;
+	box-shadow: 1px 1px 5px #e6dab6;
+	z-index: 999;
+  padding: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav h{
+	cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav .navigation ul{
+	 display:flex;
+	 justify-content: flex-end;
+	 align-items: center;
+   width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav .navigation ul li{
+	list-style: none;
+	margin-left: 40px;
+}
+
+nav .navigation ul li a{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	font-size: 16px;	
+}
+
+nav .navigation ul li a:hover {
+	color:#fad05d;
+}
+.searchbar {
+  display: flex;
+  align-items: center;
+  border: 2px solid rgb(165, 161, 161);
+  border-radius: 5px;
+  padding: 2px;
+  width: 30%;
+  margin-left: 20%;
+}
+.logo-container{
+  margin-left: 5%;
+}
+.searchinput {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px 0 0 5px;
+  background-size: 20px; 
+  background-position: 10px center; 
+  background-repeat: no-repeat;
+}
+
+.searchicon {
+font-size: 25px;
+margin-right: 10px;
+color:#fac534;
+}
+
+.searchbar:hover{
+border: 2px solid black;
+}
+.navBarCartIcon{
+  font-size: 22px;
+  color:#fac534;
+  margin:0px 20px 0px 30px;
+}
+.navBarCartIcon:hover{
+  color: black;
+}
+
+.logo{
+  font-size: 50px;
+}
+
+/* nav bar ends */
+
+
+/* card start */
+.card-container{
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  max-height:fit-content;
+  margin: 20px;
+  padding: 20px;
+}
+.card-image{
+  width:100%;
+  height: 100px;
+  padding: 10px;
+  object-fit:contain;
+  border-radius: 8px 8px 0 0;
+}
+.card-container:hover{
+  box-shadow: #eed182 0px 5px 15px;
+}
+
+.card-title{
+  margin:15px 0px 10px 0px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fac534
+}
+.card-rateing{
+  font-size: small;
+}
+.card-rateing span{
+  font-weight: 500;
+}
+.card-amount {
+font-weight: 700;
+margin-bottom: 5px;
+font-size: 20px;
+margin-top: 15px;
+}
+
+
+/* Product start */
+
+.product-card-container{
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 700px;
+  height: 300px;
+  max-height:fit-content;
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+}
+.product-card-content{
+  border-radius: 8px;
+  width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  padding: 20px;
+}
+.product-card-image{
+  width:50%;
+  height: 100%;
+  object-fit:fill;
+  border-radius: 8px 8px 0 0;
+}
+.product-card-container:hover{
+  box-shadow: #f3e4ba 0px 5px 15px;
+}
+
+/* .product-card-title{
+  margin:15px 0px 10px 0px;
+  font-weight: 500;
+  font-size: 16px;
+} */
+.product-card-title{
+  margin:15px 0px 10px 0px;
+  font-weight: 500;
+  font-size: 25px;
+  text-transform:capitalize;
+  margin-top: 70px;
+  margin-left: 20px;
+}
+.offerZone{
+  margin-left: 20px;
+}
+.offerText{
+  color: red
+}
+.product-card-rateing{
+  font-size: small;
+}
+.product-card-rateing span{
+  font-weight: 500;
+}
+.product-card-amount {
+font-weight: 500;
+margin-bottom: 5px;
+font-size: 20px;
+}
+
+/* 
+.main-img {
+  background-image: url("https://img.freepik.com/free-vector/template-banner-online-store-with-shopping-cart-with-purchases-boxes-delivery-from-supermarket-vector-illustration_548887-104.jpg");
+  background-size:cover;
+  background-position: center; 
+  width: 100%;
+  height: 200px;
+  /* transition: transform 0.3s ease, filter 0.3s ease; */
+
+
+/* .main-img:hover {
+  transform: scale(1.1); 
+  filter: blur(2px); 
+}  */
+/* 
+.main-imgContainer{
+  width: 100%;
+  height: 300px;
+} */
+.main-img {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/004/299/835/original/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-free-vector.jpg");
+  background-size: cover;
+  background-position:center;
+  width: 100%;
+  height:330px;
+  }
+/* product deatils */
+.mainPage{
+  margin-top: 5px;
+  padding: 0;
+  width: 100%;
+  height: 80vh;
+  
+  }
+  
+  .mainContainer{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  }
+  
+  .leftSection{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 40%;
+    background-color: #fff;
+    
+  }
+    .imageBox {
+   display:flex;
+   align-items: center;
+   justify-content: center;
+  /* width: 100%; */
+  }
+  .mainPage .leftSection .image{
+    height: 320px;
+    width: 320px;  
+    padding: 10px;
+    margin-bottom: 30px;
+    }
+    
+  
+  .button{
+   display: flex;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+  }
+  
+  .btnOne{
+    border: 1px solid #fad05d;
+    margin-right: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffff;
+    color: #45a049;
+    font-weight:200px;
+    font-size: 18px;
+    width: 50%;
+    cursor: pointer;
+  }
+  .addCartbutton {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .btnTwo{
+    width: 50%;
+    border: 1px solid #fad05d;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color:#45a049;
+    color: aliceblue;
+    font-weight:200px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .rightSection{
+    width: 60%;
+    padding: 1rem;
+    flex-grow: 1;
+  }
+  /*  */
+  .main-img {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/004/299/835/original/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-free-vector.jpg");
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height:330px;
+    margin-bottom: 40px;
+    }
+  .catagoryHeader{
+    font-size: 30px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+   
+  }
+  .catagory-Name {
+  text-transform:capitalize;
+  display: inline-block;
+  margin: 10px 15px 40px 160px;
+  cursor: pointer;
+  font-weight: 500;
+  color:#fac534;
+  }
+  .catagory-Name:hover{
+    color:#c7ba97;
+  }
+  
+  .cat{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+  }
+  .cat {
+     scrollbar-width: none; 
+    -ms-overflow-style: none; 
+  }
+  
+  .cat::-webkit-scrollbar {
+    display: none;
+  }
+  .cat::-webkit-scrollbar {
+  
+    width: 8px; 
+  }
+  
+  .cat::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  .cat::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  .cat::-webkit-scrollbar-thumb:hover {
+    background: #efd48c;
+  }
+
+  /* cart css */
+
+.cart-maincontainer{
+   border: 1px solid #ccc;
+   border-radius: 8px;
+     width: 350px;
+     max-height:fit-content;
+     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+     margin: 20px;
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+    justify-content: space-between;
+}
+.cart-maincontainer:hover{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+  .cart-container{
+    display: flex;
+  }
+.cart-right{
+  width: 100%;
+}
+  .cart-image{
+   width:60%;
+  height: 100px;
+  padding:10px;
+  object-fit:contain;
+  border-radius: 8px 8px 0 0;
+  }
+  .cart-head{
+    color: #ffbf10;
+    font-weight: 500;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+.cart-rate{
+  margin-top:15px;
+  margin-bottom: 20px;
+}
+
+.cart-buton{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.cart-svg{
+  display: flex;
+  align-items: center;
+}
+.cart-svg svg{
+font-size: 25px;
+margin-right: 5px;
+margin-left: 5px;
+}
+.cart-buton svg{
+  font-size: 25px;
+} 
+
+.cart-amount{
+font-weight: 700;
+}
+
+
+/* cart-pay */
+.cart-pay{
+  border: 1px solid #ccc;
+   border-radius: 8px;
+    max-width:100%;
+     max-height:fit-content;
+     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+     margin: 20px;
+     padding: 20px;
+}
+.cart-payHead{
+  font-size: 20px;
+  font-weight: bolder;
+}
+.cart-flex{
+ display:flex;
+ justify-content: space-between;
+ margin-bottom: 10px;
+ margin-top: 15px;
+ font-weight: 400
+}
+.cart-button{
+  border: none;
+  outline: none;
+  background: #ec9411;
   color: white;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.bottomline{
+  margin-bottom: 10px;
+}
+.cart-button:hover{
+  opacity: 0.5;
+}
+.cartBold{
+  font-weight: 700;
+}
+      
+#listHeader{
+font-size: 25px;
+color:#f39507;
+font-weight: 700;
+margin-left: 30px;
+text-transform: capitalize;
 }
 
-.App-link {
-  color: #61dafb;
+.shopping-header{
+  color: #f39507;
+  font-size: 30px;
+  font-weight: 900;
+  margin-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.red{
+  color: red;
+}
+.green{
+  color: green;
+}
+.list-Header-Filter{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.dropdown label{
+  font-size: 20px;
+  margin-right: 10px;
+  font-weight: 500;
+  color: rgb(240, 129, 2);
+}
+#sort{
+  width: 150px;
+  padding: 5px;
+  margin-right:20px;
+  border: 2px solid rgb(243, 147, 3);
+}
+
+.card-title-details{
+  font-size: 27px;
+  color: #ec9411;
+  margin-bottom: 8px;
+}
+
+.paragraph{
+  margin-bottom: 10px;
+}
+.card-amount-details{
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.listOrder-details li{
+margin-bottom: 15px;
+}
+
+.rightSection{
+  margin-left: 40px;
 }
