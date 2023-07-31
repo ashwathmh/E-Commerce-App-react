@@ -1,6 +1,5 @@
-// hooks is imported from the react
+
 // styles are imported from the app.css
-import React, { useEffect, useState } from 'react';
 import '../../App.css'; 
 
 // product-card function is created

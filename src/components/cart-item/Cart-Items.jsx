@@ -55,6 +55,7 @@ const deleteFromCart=(id)=>{
 }
 let totalAmount=0;
 let totalCount=0;
+
   return (
     <>
      <Navbar />
@@ -62,7 +63,7 @@ let totalCount=0;
      <h className="shopping-header">Shopping Cart</h>
 <div style={{display:"flex",flexWrap:"wrap",gap:"10px", justifyContent:"center"}}>
 
-  
+
   {cart.map((c)=>{
     const item=products.find((i)=>i.id==c.id);
     if(item){
@@ -76,7 +77,6 @@ let totalCount=0;
 </div>
 
 {/* this is ordersummery */}
-
 <div className='cart-pay'>
 <h className="cart-payHead">Order Summary</h>
 <div className='cart-flex'>
